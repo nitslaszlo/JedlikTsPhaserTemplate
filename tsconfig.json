@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+        "sourceMap": true,
+        "outDir": "wwwroot/js",
+		"watch": true
+	},
+	"files": [
+        "node_modules/phaser-ce/typescript/phaser.d.ts",
+        "node_modules/phaser-ce/typescript/pixi.d.ts"
+    ],
+    "include": [
+        "ts/**/*.ts"
+    ]
+}

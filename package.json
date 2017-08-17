@@ -1,0 +1,19 @@
+{
+  "name": "jedlik-phaser-typescript-vscode-template",
+  "version": "1.0.0",
+  "description": "Jedlik project template for using Phaser in VS Code.",
+  "main": "",
+  "repository": {
+    "private": true
+  },
+  "scripts": {
+    "compile:ts": "tsc --outFile ./wwwroot/js/game.js",
+    "inst": "npm install"
+  },
+  "author": "Jedlik Ányos",
+  "license": "MIT",
+  "dependencies": {
+    "node-static": "^0.7.9",
+    "phaser-ce": "^2.8.4"
+  }
+}
