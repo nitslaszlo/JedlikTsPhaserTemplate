@@ -11,8 +11,9 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
 4.  Visual Studio Extensions (Ctrl-Shift-X) telepítése:
      - Debugger for Chrome
      - TSLint
-5.  JedlikTsPharserTemplate.ZIP letöltése, kicsomagolása
-    JedlikTsPharserTemplate mappa átnevezése tetszőlegesen
+5.  JedlikTsPhaserTemplate.ZIP letöltése, kicsomagolása
+    vagy : git clone https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git
+    JedlikTsPhaserTemplate mappa átnevezése tetszőlegesen
 6.  Átnevezett mappa helyi menüből: Open with Code
 7.  VS Code új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
 8.  Node lokális modulok telepítése: npm install
