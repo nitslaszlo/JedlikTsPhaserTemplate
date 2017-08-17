@@ -20,10 +20,10 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
 9.  ts/*.* mappában typescript források létrehozása, szerkesztése
 10. Ctrl-Shift-B források fordítása (ts/*.ts -> wwwroot/js/game.js)
     (watch üzemmód, az első fordítás után már automatikus a fordítás)
-    (VS Code bezárása előtt Ctrl-C -vel a task kilövése ajánlott)
+    (VS Code bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
 11. VS Code új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
     Node.js webszerver indítása: node server.js
-    (VS Code bezárása előtt Ctrl-C -vel a task kilövése ajánlott)
+    (VS Code bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
 12. Chrome: http://localhost:8080/ vagy debug üzemmód: F5
 
 Hasznos linkek:
