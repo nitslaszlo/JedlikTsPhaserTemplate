@@ -1,4 +1,4 @@
-HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
+﻿HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
 ==============================================================
 1.  Node.js letöltése, telepítése:
     https://nodejs.org/en/download/
@@ -42,9 +42,32 @@ Hasznos linkek:
 http://www.phaser.io/
 https://github.com/photonstorm/phaser
 https://photonstorm.github.io/phaser-ce/
-https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 http://www.html5gamedevs.com/forum/14-phaser/
 http://pgl.ilinov.eu/
+https://git-scm.com/book/en/v2
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+Verziókezelés Git-el:
+=====================
+1. Github account létrehozása:
+   https://github.com/
+   (nitslaszlo az account név a példában)
+2. Git repository létrehozása:
+   pl.: GitHub asztali alkalmazással vagy github.com-on
+   (JedlikTsPhaserTemplate a repository neve a pédában)
+3. Visual Studio Code indítása - project betöltése
+4. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
+   majd "Initialize Repository"-ra kattínt (felül)
+5. Remote repository megadása terminál (Ctr-Shift-ö) ablakból
+   "git remote add origin https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
+6. ".gitignore" fájl létrehozása:
+   Ctrl-N -el új fájl létrehozása
+   A fájl tartalma: node_modules
+   (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
+   Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
+7. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
+
+   
 
 Verziók lekérdezése terminálablakból:
 =====================================
