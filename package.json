@@ -1,7 +1,7 @@
 {
   "name": "jedlik-phaser-typescript-vscode-template",
   "version": "1.0.0",
-  "description": "Jedlik project template for using Phaser in VS Code.",
+  "description": "Jedlik project template for using Phaser and TypeScript in VS Code.",
   "main": "",
   "repository": {
     "private": true
