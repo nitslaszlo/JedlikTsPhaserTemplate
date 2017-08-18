@@ -1,3 +1,6 @@
+// Node.js webserver
+// =================
+
 // import our modules
 var nodeStatic 	= require( 'node-static' );	// used for serving static files
 var http		= require( 'http' );		// default node http server

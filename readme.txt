@@ -46,6 +46,7 @@ http://www.html5gamedevs.com/forum/14-phaser/
 http://pgl.ilinov.eu/
 https://git-scm.com/book/en/v2
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+https://fonts.google.com/
 
 Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
 ===========================================================
