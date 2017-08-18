@@ -10,6 +10,11 @@
         "node_modules/phaser-ce/typescript/pixi.d.ts"
     ],
     "include": [
-        "ts/**/*.ts"
+        "ts/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "node_modules/**/*",
+        "**/node_modules/*"
     ]
 }
