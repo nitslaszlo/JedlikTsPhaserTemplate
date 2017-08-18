@@ -47,8 +47,8 @@ http://pgl.ilinov.eu/
 https://git-scm.com/book/en/v2
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 
-Verziókezelés Git-el:
-=====================
+Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
+===========================================================
 1. Github account létrehozása:
    https://github.com/
    (nitslaszlo az account név a példában)
@@ -60,18 +60,20 @@ Verziókezelés Git-el:
    majd "Initialize Repository"-ra kattínt (felül)
 5. Remote repository megadása terminál (Ctr-Shift-ö) ablakból
    "git remote add origin https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
-6. ".gitignore" fájl létrehozása:
+6. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
    A fájl tartalma: node_modules
    (További mappák és fájlok megadhatóak, melyek nem kerülnek "feltöltésre")
    Ctrl-S -> .gitignore néven menteni a projekt főkönyvtárába
 7. Ctrl-Shift-G -> Commit message megadása, majd commit Ctrl-Enter -el
+8. Változások szinkronizálása ("feltöltés")
+   Alul a státus sorban balra "Synchronize Changes" -ra kattínt
 
    
-
 Verziók lekérdezése terminálablakból:
 =====================================
 TypeScript: tsc -v
 Node.js: node -v
+git: git --version
 npm: npm -v
 Phaser: npm v phaser-ce
