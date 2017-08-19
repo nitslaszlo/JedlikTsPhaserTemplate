@@ -22,7 +22,25 @@ var MyGame;
             // Desktop specific settings go here
             if (this.game.device.desktop) {
             }
-            this.game.state.start("PreloaderState", true, false);
+            // If the device is not a desktop, so it's a mobile device
+            if (!this.game.device.desktop) {
+                // Set the type of scaling to 'USER_SCALE'
+                this.game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+                this.game.scale.fullScreenScaleMode = Phaser.ScaleManager.USER_SCALE;
+                this.game.scale.setResizeCallback(this.gameResized, this);
+                // Add a color to the page, to hide the white borders we might have
+                document.body.style.backgroundColor = "#abcd00";
+                // Center the game on the screen
+                this.game.scale.pageAlignHorizontally = true;
+                this.game.scale.pageAlignVertically = true;
+                // Apply the scale changes
+                this.game.scale.refresh();
+            }
+            this.game.state.start("PreloaderState");
+        };
+        BootState.prototype.gameResized = function (manager, bounds) {
+            var scale = Math.min(window.innerWidth / this.game.width, window.innerHeight / this.game.height);
+            manager.setUserScale(scale, scale, 0, 0);
         };
         return BootState;
     }(Phaser.State));
@@ -40,6 +58,8 @@ var MyGame;
             var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
             logo.anchor.setTo(0.5, 0.5);
         };
+        GameState.prototype.update = function () {
+        };
         return GameState;
     }(Phaser.State));
     MyGame.GameState = GameState;
@@ -55,6 +75,8 @@ var MyGame;
         };
         MenuState.prototype.create = function () {
             this.game.state.start("GameState");
+        };
+        MenuState.prototype.update = function () {
         };
         return MenuState;
     }(Phaser.State));

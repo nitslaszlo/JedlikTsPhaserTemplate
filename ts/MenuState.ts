@@ -8,5 +8,8 @@ namespace MyGame {
 		create(): void {
 			this.game.state.start("GameState");
 		}
+
+		update(): void {
+		}
 	}
 }
