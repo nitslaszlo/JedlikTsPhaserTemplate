@@ -1,4 +1,4 @@
-﻿HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
+HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
 ==============================================================
 1.  Node.js letöltése, telepítése:
     https://nodejs.org/en/download/
