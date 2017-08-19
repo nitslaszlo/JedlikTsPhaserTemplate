@@ -18,6 +18,6 @@
         "**/.git": true,
         "**/.gitignore": true,
         "**/node_modules": true,
-        "**/s.js": true,
+        "**/s.js": true
       }
 }
