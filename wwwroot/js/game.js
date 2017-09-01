@@ -87,7 +87,7 @@ var MyGame;
     var PhaserGame = (function (_super) {
         __extends(PhaserGame, _super);
         function PhaserGame() {
-            var _this = _super.call(this, 800, 600, Phaser.AUTO, "content", null) || this;
+            var _this = _super.call(this, 800, 600, Phaser.AUTO, "content", undefined) || this;
             _this.state.add("BootState", MyGame.BootState);
             _this.state.add("PreloaderState", MyGame.PreloaderState);
             _this.state.add("MenuState", MyGame.MenuState);

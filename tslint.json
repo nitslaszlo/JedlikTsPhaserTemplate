@@ -8,7 +8,7 @@
         "curly":[true, "ignore-same-line"],
         "debug-assert": true,
         "indent": [true,
-            "tabs"
+            "spaces"
         ],
         "jsdoc-format": true,
         "linebreak-style": [true, "CRLF"],

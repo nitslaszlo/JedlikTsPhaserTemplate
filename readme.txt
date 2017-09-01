@@ -26,7 +26,7 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
     Node lokális modulok telepítése:
     terminál ablakból "npm install" paraccsal
     (phaser-ce és node-static modulokat telepíti, lsd.: package.json)
-9.  ts mappában typescript források létrehozása, szerkesztése
+9.  ts mappában typescript források létrehozása, meglévők szerkesztése
 10. Ctrl-Shift-B *.ts források átalakítása JavaScript-re (wwwroot/js/game.js)
     (watch üzemmód, az első fordítás után már automatikus a fordítás)
     (VS Code bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
@@ -78,3 +78,12 @@ Node.js: node -v
 git: git --version
 npm: npm -v
 Phaser: npm v phaser-ce
+
+VS Code editor beállítása:
+==========================
+1. Ctrl-Shift-P vagy F1
+2. "Preferen..." gépelése
+3. Preferences: Open Workplace Settings a projektben tárolt beállításokhoz (ez az erősebb) vagy
+   Preferences: Open User Settings a felasználónált tárolt beállításokhoz
+   Konfig fájl workspace: projekt/.vscode/settings.json
+   Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json 

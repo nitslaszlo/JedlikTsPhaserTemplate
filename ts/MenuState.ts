@@ -1,15 +1,15 @@
 namespace MyGame {
 
-	export class MenuState extends Phaser.State {
+    export class MenuState extends Phaser.State {
 
-		preload(): void {
-		}
+        preload(): void {
+        }
 
-		create(): void {
-			this.game.state.start("GameState");
-		}
+        create(): void {
+            this.game.state.start("GameState");
+        }
 
-		update(): void {
-		}
-	}
+        update(): void {
+        }
+    }
 }
