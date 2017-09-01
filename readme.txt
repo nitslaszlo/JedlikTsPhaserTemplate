@@ -9,9 +9,9 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
     parancsokkal
 3.  Git for windows telepítése:
     https://git-for-windows.github.io/
-4.  Visual Studio Code telepítése
+4.  Visual Studio Code (továbbiakban VSC) telepítése
     https://code.visualstudio.com/docs/setup/setup-overview
-5.  Visual Studio Extensions (Ctrl-Shift-X) telepítése:
+5.  VSC futtatása, Visual Studio Extensions (Ctrl-Shift-X) telepítése:
      - Debugger for Chrome
      - TSLint
 6.  https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git
@@ -22,20 +22,20 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
     "git clone https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
 7.  JedlikTsPhaserTemplate-master mappa átnevezése tetszőlegesen
     Átnevezett mappa helyi menüből: Open with Code,
-    vagy a VS Code indítása után File/Open Folder... menüpontba a mappa megnyitása
-8.  VS Code új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
+    vagy a VSC indítása után File/Open Folder... menüpontba a mappa megnyitása
+8.  VSC új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
     Node lokális modulok telepítése:
     terminál ablakból "npm install" paraccsal
     (phaser-ce és node-static modulokat telepíti, lsd.: package.json)
 9.  ts mappában typescript források létrehozása, meglévők szerkesztése
-10. Ctrl-Shift-B *.ts források átalakítása JavaScript-re (wwwroot/js/game.js)
+10. Ctrl-Shift-B => TypeScript források átalakítása JavaScript-re (ts\*.ts => wwwroot/js/game.js)
     (watch üzemmód, az első fordítás után már automatikus a fordítás)
-    (VS Code bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
-11. VS Code új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
+    (VSC bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
+11. VSC új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
     Node.js webszerver indítása:
     terminál ablakból "node s.js" paranccsal
-    (VS Code bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
-12. Chrome: http://localhost:8080/ 
+    (VSC bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
+12. Futtatás: Chrome: http://localhost:8080/ 
     vagy debug üzemmód: F5 -el
 
 Hasznos linkek:
