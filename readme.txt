@@ -21,7 +21,8 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
     "cd projekt_szülőmappa"
     "git clone https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
 7.  JedlikTsPhaserTemplate-master mappa átnevezése tetszőlegesen
-    Átnevezett mappa helyi menüből: Open with Code
+    Átnevezett mappa helyi menüből: Open with Code,
+    vagy a VS Code indítása után File/Open Folder... menüpontba a mappa megnyitása
 8.  VS Code új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
     Node lokális modulok telepítése:
     terminál ablakból "npm install" paraccsal
