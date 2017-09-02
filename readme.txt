@@ -8,6 +8,7 @@ A.  Fejlesztői környezet telepítése, beállítása
     "npm install -g typescript"
     "npm install -g typings"
     "npm install -g tslint"
+    "npm install -g live-server"
     parancsokkal
 3.  Git for windows telepítése:
     https://git-for-windows.github.io/
@@ -40,7 +41,7 @@ B.  Projekt előkészítése (inicializálása)
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
     Node.js lokális modulok telepítése:
-    terminál ablakból "npm install" paracs futtatása
+    terminál ablakból "npm install" parancs futtatása
     (phaser-ce és node-static modulokat telepíti, lsd.: package.json)
 
 C.  Fejlesztés, tesztelés, kilépés
@@ -50,9 +51,10 @@ C.  Fejlesztés, tesztelés, kilépés
     VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 2.  Ctrl-Shift-B => TypeScript források átalakítása JavaScript-re (ts\*.ts => wwwroot/js/game.js)
     (watch üzemmód, az első fordítás után már automatikus a fordítás)
-    (amig aktív a task, addíg nem kell (lehet) újraindítani)
-3.  Ctrl-Shift-T => Node.js webszerver indítása
-    (amig aktív a task, addíg nem kell (lehet) újraindítani)
+    (amíg aktív a task, addig nem kell (lehet) újraindítani)
+3.  Ctrl-Shift-T => live-server webszerver indítása
+    (live-server -> változásnál újratölti az oldalt autómatikusan)
+    (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  ts mappában typescript források létrehozása, meglévők szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/ 
     vagy tesztelés debug üzemmódban: F5 -el
@@ -79,11 +81,11 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    (nitslaszlo az account név a példában)
 2. Git repository létrehozása:
    pl.: GitHub asztali alkalmazással vagy github.com-on
-   (JedlikTsPhaserTemplate a repository neve a pédában)
+   (JedlikTsPhaserTemplate a repository neve a példában)
 3. Visual Studio Code indítása - project betöltése
 4. Git inicializálása a 3. ("Y") ikonnal vagy Ctrl-Shift-G
-   majd "Initialize Repository"-ra kattínt (felül)
-5. Remote repository megadása terminál (Ctr-Shift-ö) ablakból
+   majd "Initialize Repository"-ra kattint (felül)
+5. Remote repository megadása új terminál ablakból (Ctr-Shift-ö)
    "git remote add origin https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
 6. ".gitignore" fájl létrehozása (opcionális):
    Ctrl-N -el új fájl létrehozása
@@ -102,16 +104,6 @@ Node.js: node -v
 git: git --version
 npm: npm -v
 Phaser: npm v phaser-ce
-
-Node Live-server -> Ha lusta vagy a böngészőablakot frissíteni :-)
-==================================================================
-1.  Node.js command prompt:
-    "npm install -g live-server"
-2.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
-3.  Új terminál abalak készítésa: "+" ikonnal
-4.  cd wwwroot (TAB működik! cd w TAB)
-5.  "live-server" parancs indít
-  
 
 VS Code editor beállítása:
 ==========================
