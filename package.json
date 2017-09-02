@@ -8,9 +8,10 @@
   },
   "scripts": {
     "compile:ts": "tsc --outFile ./wwwroot/js/game.js",
-    "inst": "npm install"
+    "install:nodemodules": "npm install",
+    "run:webserver": "node --nolazy ./s.js"
   },
-  "author": "Jedlik Ányos",
+  "author": "Nits László",
   "license": "MIT",
   "dependencies": {
     "node-static": "^0.7.9",

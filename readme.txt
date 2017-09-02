@@ -1,5 +1,7 @@
 HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
 ==============================================================
+A.  Fejlesztői környezet telepítése, beállítása
+================================================
 1.  Node.js letöltése, telepítése:
     https://nodejs.org/en/download/
 2.  Node.js command prompt, globális Node.js csomagok telepítése:
@@ -9,34 +11,55 @@ HTML5 játékfejlesztés VS Code + Node.js + TypeScript + Phaser
     parancsokkal
 3.  Git for windows telepítése:
     https://git-for-windows.github.io/
-4.  Visual Studio Code (továbbiakban VSC) telepítése
+4.  Visual Studio Code (továbbiakban VSCode) telepítése
     https://code.visualstudio.com/docs/setup/setup-overview
-5.  VSC futtatása, Visual Studio Extensions (Ctrl-Shift-X) telepítése:
+5.  VSCode futtatása, Visual Studio Extensions telepítése: Ctrl-Shift-X
+    Kiterjesztés keresése, telepítés:
      - Debugger for Chrome
      - TSLint
-6.  https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git
+     (opcionális: további kiterjesztések telepítése igény szerint)
+6. Billentyűkombinációk beállítása: 
+    File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctl-S
+    Parancs keresése: gépeléssel
+    Hozzárendelés, módosítás: "ceruza" ikonra kattíntással
+    - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
+    - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
+    - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
+7. Opcionális: VSCode beállítása: lsd. az oldal végén
+
+B.  Projekt előkészítése (inicializálása)
+=========================================
+1.  https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git
     JedlikTsPhaserTemplate-master.zip letöltése, kicsomagolása
     vagy:
     CMD ablak
     "cd projekt_szülőmappa"
     "git clone https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
-7.  JedlikTsPhaserTemplate-master mappa átnevezése tetszőlegesen
+2.  JedlikTsPhaserTemplate-master mappa átnevezése tetszőlegesen
     Átnevezett mappa helyi menüből: Open with Code,
-    vagy a VSC indítása után File/Open Folder... menüpontba a mappa megnyitása
-8.  VSC új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
-    Node lokális modulok telepítése:
-    terminál ablakból "npm install" paraccsal
+    vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
+3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
+    Node.js lokális modulok telepítése:
+    terminál ablakból "npm install" paracs futtatása
     (phaser-ce és node-static modulokat telepíti, lsd.: package.json)
-9.  ts mappában typescript források létrehozása, meglévők szerkesztése
-10. Ctrl-Shift-B => TypeScript források átalakítása JavaScript-re (ts\*.ts => wwwroot/js/game.js)
+
+C.  Fejlesztés, tesztelés, kilépés
+===================================
+1.  VSCode indítása (utoljára megnyitott projektet visszatölti), vagy
+    Project mappa helyi menüből: Open with Code, vagy
+    VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
+2.  Ctrl-Shift-B => TypeScript források átalakítása JavaScript-re (ts\*.ts => wwwroot/js/game.js)
     (watch üzemmód, az első fordítás után már automatikus a fordítás)
-    (VSC bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
-11. VSC új terminál ablak aktiválása: Ctrl-Shift-ö (vagy a "+" ikon)
-    Node.js webszerver indítása:
-    terminál ablakból "node s.js" paranccsal
-    (VSC bezárása előtt Ctrl-C -vel a task "kilövése" ajánlott)
-12. Futtatás: Chrome: http://localhost:8080/ 
-    vagy debug üzemmód: F5 -el
+    (amig aktív a task, addíg nem kell (lehet) újraindítani)
+3.  Ctrl-Shift-T => Node.js webszerver indítása
+    (amig aktív a task, addíg nem kell (lehet) újraindítani)
+4.  ts mappában typescript források létrehozása, meglévők szerkesztése
+5.  Futtatás: Chrome: http://localhost:8080/ 
+    vagy tesztelés debug üzemmódban: F5 -el
+6.  goto 4.pont :-)
+7.  Kilépéskor a "Task - run:webserver" task "kilövése" a kuka ikonnal,
+    mivel a webserver kilépés után is futni fog!
+    Ha ez a cél, akkor nem kell megszakítani.
 
 Hasznos linkek:
 ===============
@@ -84,7 +107,7 @@ VS Code editor beállítása:
 ==========================
 1. Ctrl-Shift-P vagy F1
 2. "Preferen..." gépelése
-3. Preferences: Open Workplace Settings a projektben tárolt beállításokhoz (ez az erősebb) vagy
-   Preferences: Open User Settings a felasználónált tárolt beállításokhoz
+3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy
+   Preferences: "Open User Settings" a felasználónált tárolt beállításokhoz
    Konfig fájl workspace: projekt/.vscode/settings.json
    Konfig fájl user: c:/Users/UserName/AppData/Roaming/Code/User/settings.json 

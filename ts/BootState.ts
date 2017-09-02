@@ -32,7 +32,7 @@ namespace MyGame {
             this.game.state.start("PreloaderState");
         }
 
-        gameResized(manager: Phaser.ScaleManager, bounds: Phaser.Rectangle): void {
+        private gameResized(manager: Phaser.ScaleManager, bounds: Phaser.Rectangle): void {
             const scale = Math.min(window.innerWidth / this.game.width, window.innerHeight / this.game.height);
             manager.setUserScale(scale, scale, 0, 0);
         }

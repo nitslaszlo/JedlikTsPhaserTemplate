@@ -57,6 +57,7 @@ var MyGame;
         GameState.prototype.create = function () {
             var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
             logo.anchor.setTo(0.5, 0.5);
+            logo.scale.setTo(0.7, 0.7);
         };
         GameState.prototype.update = function () {
         };
@@ -111,7 +112,7 @@ var MyGame;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         PreloaderState.prototype.preload = function () {
-            this.game.load.image("logo", "assets/logo.jpg");
+            this.game.load.image("logo", "assets/logo.png");
         };
         PreloaderState.prototype.create = function () {
             this.game.state.start("MenuState");
