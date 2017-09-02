@@ -20,7 +20,7 @@ A.  Fejlesztői környezet telepítése, beállítása
      - TSLint
      (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: 
-    File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctl-S
+    File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
     Hozzárendelés, módosítás: "ceruza" ikonra kattíntással
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
