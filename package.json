@@ -9,7 +9,7 @@
   "scripts": {
     "compile:ts": "tsc --outFile ./wwwroot/js/game.js",
     "install:nodemodules": "npm install",
-    "run:webserver": "node --nolazy ./s.js"
+    "run:webserver": "live-server ./wwwroot"
   },
   "author": "Nits László",
   "license": "MIT",

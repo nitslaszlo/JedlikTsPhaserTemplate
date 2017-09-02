@@ -103,6 +103,16 @@ git: git --version
 npm: npm -v
 Phaser: npm v phaser-ce
 
+Node Live-server -> Ha lusta vagy a böngészőablakot frissíteni :-)
+==================================================================
+1.  Node.js command prompt:
+    "npm install -g live-server"
+2.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
+3.  Új terminál abalak készítésa: "+" ikonnal
+4.  cd wwwroot (TAB működik! cd w TAB)
+5.  "live-server" parancs indít
+  
+
 VS Code editor beállítása:
 ==========================
 1. Ctrl-Shift-P vagy F1
