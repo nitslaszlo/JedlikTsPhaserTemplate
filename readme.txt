@@ -6,7 +6,6 @@ A.  Fejlesztői környezet telepítése, beállítása
     https://nodejs.org/en/download/
 2.  Node.js command prompt, globális Node.js csomagok telepítése:
     "npm install -g typescript"
-    "npm install -g typings"
     "npm install -g tslint"
     "npm install -g live-server"
     parancsokkal
