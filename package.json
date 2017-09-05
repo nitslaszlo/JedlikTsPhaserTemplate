@@ -13,6 +13,9 @@
   },
   "author": "Nits László",
   "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^8.0.26"
+  },
   "dependencies": {
     "node-static": "^0.7.9",
     "phaser-ce": "^2.8.4"
