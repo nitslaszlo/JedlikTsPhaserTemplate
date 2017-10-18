@@ -10,7 +10,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var MyGame;
 (function (MyGame) {
-    var BootState = /** @class */ (function (_super) {
+    var BootState = (function (_super) {
         __extends(BootState, _super);
         function BootState() {
             return _super !== null && _super.apply(this, arguments) || this;
@@ -48,7 +48,7 @@ var MyGame;
 })(MyGame || (MyGame = {}));
 var MyGame;
 (function (MyGame) {
-    var GameState = /** @class */ (function (_super) {
+    var GameState = (function (_super) {
         __extends(GameState, _super);
         function GameState() {
             return _super !== null && _super.apply(this, arguments) || this;
@@ -66,7 +66,7 @@ var MyGame;
 })(MyGame || (MyGame = {}));
 var MyGame;
 (function (MyGame) {
-    var MenuState = /** @class */ (function (_super) {
+    var MenuState = (function (_super) {
         __extends(MenuState, _super);
         function MenuState() {
             return _super !== null && _super.apply(this, arguments) || this;
@@ -84,7 +84,7 @@ var MyGame;
 })(MyGame || (MyGame = {}));
 var MyGame;
 (function (MyGame) {
-    var PhaserGame = /** @class */ (function (_super) {
+    var PhaserGame = (function (_super) {
         __extends(PhaserGame, _super);
         function PhaserGame() {
             var _this = _super.call(this, 800, 600, Phaser.AUTO, "content", undefined) || this;
@@ -105,7 +105,7 @@ window.onload = function () {
 };
 var MyGame;
 (function (MyGame) {
-    var PreloaderState = /** @class */ (function (_super) {
+    var PreloaderState = (function (_super) {
         __extends(PreloaderState, _super);
         function PreloaderState() {
             return _super !== null && _super.apply(this, arguments) || this;
