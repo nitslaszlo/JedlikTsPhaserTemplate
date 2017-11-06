@@ -21,10 +21,12 @@ A.  Fejlesztői környezet telepítése, beállítása
 6. Billentyűkombinációk beállítása: 
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
     Parancs keresése: gépeléssel
-    Hozzárendelés, módosítás: "ceruza" ikonra kattíntással
+    Hozzárendelés, módosítás: "ceruza" ikonra kattíntással, törlés: Del bill.
     - gépel: "test" > parancs: "Run Test Task" > hozzárendel: Ctrl-Shift-T
+    - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del)
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
+
 7. Opcionális: VSCode beállítása: lsd. az oldal végén
 
 B.  Projekt előkészítése (inicializálása)
@@ -62,8 +64,22 @@ C.  Fejlesztés, tesztelés, kilépés
     mivel a webserver kilépés után is futni fog!
     Ha ez a cél, akkor nem kell megszakítani.
 
-Hasznos linkek:
-===============
+D. Verziók lekérdezése terminálablakból:
+=========================================
+TypeScript: tsc -v
+Node.js: node -v
+git: git --version
+npm: npm -v
+
+E. Komponensek frissítése
+==========================
+VSCode: Automatikus, balra lent a fogaskeréken jelzi, ha új verzió jön ki
+VSCode kiterjesztések: Automatikus, balra az Extensions ikon jelzi, ha új verzió jön ki
+TypeScript: npm update -g typescript
+Node.js: npm install --save-dev @types/node
+
+F. Hasznos linkek:
+=================
 http://www.phaser.io/
 https://github.com/photonstorm/phaser
 https://photonstorm.github.io/phaser-ce/
