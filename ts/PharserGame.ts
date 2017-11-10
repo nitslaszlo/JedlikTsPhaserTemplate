@@ -4,20 +4,14 @@ namespace MyGame {
 
         constructor() {
             super(800, 600, Phaser.AUTO, "content", undefined);
-
-            this.state.add("BootState", BootState);
-            this.state.add("PreloaderState", PreloaderState);
-            this.state.add("MenuState", MenuState);
             this.state.add("GameState", GameState);
-
-            this.state.start("BootState");
+            this.state.start("GameState");
         }
 
     }
 
 }
 
-// when the page has finished loading, create our game
 window.onload = () => {
     const game = new MyGame.PhaserGame();
 };

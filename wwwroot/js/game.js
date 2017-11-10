@@ -10,42 +10,21 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var MyGame;
 (function (MyGame) {
-    var BootState = /** @class */ (function (_super) {
-        __extends(BootState, _super);
-        function BootState() {
-            return _super !== null && _super.apply(this, arguments) || this;
+    var PhaserGame = /** @class */ (function (_super) {
+        __extends(PhaserGame, _super);
+        function PhaserGame() {
+            var _this = _super.call(this, 800, 600, Phaser.AUTO, "content", undefined) || this;
+            _this.state.add("GameState", MyGame.GameState);
+            _this.state.start("GameState");
+            return _this;
         }
-        BootState.prototype.preload = function () { };
-        BootState.prototype.create = function () {
-            // Use this if you don't need multitouch
-            this.input.maxPointers = 1;
-            // Desktop specific settings go here
-            if (this.game.device.desktop) {
-            }
-            // If the device is not a desktop, so it's a mobile device
-            if (!this.game.device.desktop) {
-                // Set the type of scaling to 'USER_SCALE'
-                this.game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
-                this.game.scale.fullScreenScaleMode = Phaser.ScaleManager.USER_SCALE;
-                this.game.scale.setResizeCallback(this.gameResized, this);
-                // Add a color to the page, to hide the white borders we might have
-                document.body.style.backgroundColor = "#abcd00";
-                // Center the game on the screen
-                this.game.scale.pageAlignHorizontally = true;
-                this.game.scale.pageAlignVertically = true;
-                // Apply the scale changes
-                this.game.scale.refresh();
-            }
-            this.game.state.start("PreloaderState");
-        };
-        BootState.prototype.gameResized = function (manager, bounds) {
-            var scale = Math.min(window.innerWidth / this.game.width, window.innerHeight / this.game.height);
-            manager.setUserScale(scale, scale, 0, 0);
-        };
-        return BootState;
-    }(Phaser.State));
-    MyGame.BootState = BootState;
+        return PhaserGame;
+    }(Phaser.Game));
+    MyGame.PhaserGame = PhaserGame;
 })(MyGame || (MyGame = {}));
+window.onload = function () {
+    var game = new MyGame.PhaserGame();
+};
 var MyGame;
 (function (MyGame) {
     var GameState = /** @class */ (function (_super) {
@@ -53,71 +32,18 @@ var MyGame;
         function GameState() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        GameState.prototype.preload = function () { };
+        GameState.prototype.preload = function () {
+            this.game.load.image("logo", "assets/logo.jpg");
+        };
         GameState.prototype.create = function () {
-            var logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
-            logo.anchor.setTo(0.5, 0.5);
+            this.mySprite = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
+            this.mySprite.anchor.setTo(0.5, 0.5);
         };
         GameState.prototype.update = function () {
+            this.mySprite.rotation += 0.01;
         };
         return GameState;
     }(Phaser.State));
     MyGame.GameState = GameState;
-})(MyGame || (MyGame = {}));
-var MyGame;
-(function (MyGame) {
-    var MenuState = /** @class */ (function (_super) {
-        __extends(MenuState, _super);
-        function MenuState() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        MenuState.prototype.preload = function () {
-        };
-        MenuState.prototype.create = function () {
-            this.game.state.start("GameState");
-        };
-        MenuState.prototype.update = function () {
-        };
-        return MenuState;
-    }(Phaser.State));
-    MyGame.MenuState = MenuState;
-})(MyGame || (MyGame = {}));
-var MyGame;
-(function (MyGame) {
-    var PhaserGame = /** @class */ (function (_super) {
-        __extends(PhaserGame, _super);
-        function PhaserGame() {
-            var _this = _super.call(this, 800, 600, Phaser.AUTO, "content", undefined) || this;
-            _this.state.add("BootState", MyGame.BootState);
-            _this.state.add("PreloaderState", MyGame.PreloaderState);
-            _this.state.add("MenuState", MyGame.MenuState);
-            _this.state.add("GameState", MyGame.GameState);
-            _this.state.start("BootState");
-            return _this;
-        }
-        return PhaserGame;
-    }(Phaser.Game));
-    MyGame.PhaserGame = PhaserGame;
-})(MyGame || (MyGame = {}));
-// when the page has finished loading, create our game
-window.onload = function () {
-    var game = new MyGame.PhaserGame();
-};
-var MyGame;
-(function (MyGame) {
-    var PreloaderState = /** @class */ (function (_super) {
-        __extends(PreloaderState, _super);
-        function PreloaderState() {
-            return _super !== null && _super.apply(this, arguments) || this;
-        }
-        PreloaderState.prototype.preload = function () {
-            this.game.load.image("logo", "assets/logo.jpg");
-        };
-        PreloaderState.prototype.create = function () {
-            this.game.state.start("MenuState");
-        };
-        return PreloaderState;
-    }(Phaser.State));
-    MyGame.PreloaderState = PreloaderState;
 })(MyGame || (MyGame = {}));
 //# sourceMappingURL=game.js.map
