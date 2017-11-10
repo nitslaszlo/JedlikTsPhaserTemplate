@@ -1,6 +1,7 @@
 namespace MyGame {
 
     export class GameState extends Phaser.State {
+
         private mySprite: Phaser.Sprite;
 
         preload(): void {
