@@ -38,6 +38,7 @@ B.  Projekt előkészítése (inicializálása)
     "cd projekt_szülőmappa"
     "git clone https://github.com/nitslaszlo/JedlikTsPhaserTemplate.git"
 2.  JedlikTsPhaserTemplate-master mappa átnevezése tetszőlegesen
+    .git mappa törlése, ha clone-al töltötted le és nem vagy társszerző (collaborator)
     Átnevezett mappa helyi menüből: Open with Code,
     vagy a VSCode indítása után File/Open Folder... menüpontba a project mappa megnyitása
 3.  VSCode terminál ablak aktiválása: View/Integrated Terminal menüvel, vagy Ctrl-ö
@@ -54,7 +55,7 @@ C.  Fejlesztés, tesztelés, kilépés
     (watch üzemmód, az első fordítás után már automatikus a fordítás)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 3.  Ctrl-Shift-T => live-server webszerver indítása
-    (live-server -> változásnál újratölti az oldalt autómatikusan)
+    (live-server -> változásnál újratölti az oldalt automatikusan)
     (amíg aktív a task, addig nem kell (lehet) újraindítani)
 4.  ts mappában typescript források létrehozása, meglévők szerkesztése
 5.  Futtatás: Chrome: http://localhost:8080/ 

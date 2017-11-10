@@ -33,7 +33,7 @@ var MyGame;
             return _super !== null && _super.apply(this, arguments) || this;
         }
         GameState.prototype.preload = function () {
-            this.game.load.image("logo", "assets/logo.jpg");
+            this.game.load.image("logo", "assets/phaser-logo-small.png");
         };
         GameState.prototype.create = function () {
             this.mySprite = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
