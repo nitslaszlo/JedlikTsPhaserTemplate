@@ -17,6 +17,7 @@ A.  Fejlesztői környezet telepítése, beállítása
     Kiterjesztés keresése, telepítés:
      - Debugger for Chrome
      - TSLint
+     - vscode-pdf
      (opcionális: további kiterjesztések telepítése igény szerint)
 6. Billentyűkombinációk beállítása: 
     File\Preferences\Keyboard Shortcuts menüvel, vagy Ctrl-K majd Ctrl-S
