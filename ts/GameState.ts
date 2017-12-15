@@ -5,11 +5,12 @@ namespace MyGame {
         private mySprite: Phaser.Sprite;
 
         preload(): void {
-            this.game.load.image("logo", "assets/phaser-logo-small.png");
+            this.game.load.image("logo", "assets/phaser-ce-293.png");
         }
 
         create(): void {
             this.mySprite = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
+            this.mySprite.scale.set(0.5);
             this.mySprite.anchor.setTo(0.5);
         }
 
