@@ -10,7 +10,7 @@ var MyGame;
             this.mySprite.anchor.setTo(0.5);
         }
         update() {
-            this.mySprite.rotation += 0.01;
+            this.mySprite.rotation += 0.02;
         }
     }
     MyGame.GameState = GameState;

@@ -15,7 +15,7 @@ namespace MyGame {
         }
 
         update(): void {
-            this.mySprite.rotation += 0.01;
+            this.mySprite.rotation += 0.02;
         }
 
     }
