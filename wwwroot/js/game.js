@@ -2,7 +2,7 @@ var MyGame;
 (function (MyGame) {
     class GameState extends Phaser.State {
         preload() {
-            this.game.load.image("logo", "assets/phaser-ce-293.png");
+            this.game.load.image("logo", "assets/phaser-ce-294.png");
         }
         create() {
             this.mySprite = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");

@@ -5,7 +5,7 @@ namespace MyGame {
         private mySprite: Phaser.Sprite;
 
         preload(): void {
-            this.game.load.image("logo", "assets/phaser-ce-293.png");
+            this.game.load.image("logo", "assets/phaser-ce-294.png");
         }
 
         create(): void {
