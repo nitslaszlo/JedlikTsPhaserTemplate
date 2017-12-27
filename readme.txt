@@ -9,7 +9,7 @@ A.  Fejlesztői környezet telepítése, beállítása
     "npm install -g tslint"
     "npm install -g live-server"
     parancsokkal
-3.  Git for windows telepítése:
+3.  Git for windows telepítése (opcionális lépés Git-hez):
     https://git-for-windows.github.io/
 4.  Visual Studio Code (továbbiakban VSCode) telepítése
     https://code.visualstudio.com/docs/setup/setup-overview
@@ -27,7 +27,6 @@ A.  Fejlesztői környezet telepítése, beállítása
     - gépel: "reopen" > parancs: "Reopen Closed Editor" > Remove Keybindings (vagy Del)
     - gépel: "delete" > parancs: "Delete Line" > hozzárendel: Ctrl-L
     - opcionális: további billentyűkombinációk hozzárendelése tetszés szerint
-
 7. Opcionális: VSCode beállítása: lsd. az oldal végén
 
 B.  Projekt előkészítése (inicializálása)
@@ -91,8 +90,8 @@ https://git-scm.com/book/en/v2
 https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
 https://fonts.google.com/
 
-Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
-===========================================================
+G. Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
+==============================================================
 1. Github account létrehozása:
    https://github.com/
    (nitslaszlo az account név a példában)
@@ -114,16 +113,16 @@ Verziókezelés Git-el VS Code-ban (nagyon alap, opcionális):
    Alul a státus sorban balra "Synchronize Changes" -ra kattínt
 
    
-Verziók lekérdezése terminálablakból:
-=====================================
+H. Verziók lekérdezése terminálablakból:
+=========================================
 TypeScript: tsc -v
 Node.js: node -v
 git: git --version
 npm: npm -v
 Phaser: npm v phaser-ce
 
-VS Code editor beállítása:
-==========================
+I. VS Code editor beállítása:
+==============================
 1. Ctrl-Shift-P vagy F1
 2. "Preferen..." gépelése
 3. Preferences: "Open Workplace Settings" a projektben tárolt beállításokhoz (ez az erősebb) vagy
